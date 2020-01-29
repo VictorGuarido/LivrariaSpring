@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário de cadastro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <h1>Bem vindo - Livraria Mastertech</h1>
+
+            <a href="/livros"> <button>Exibir Livros</button> </a>
+            <a href="/telaPesquisa"> <button>Pesquise um livro</button> </a>
+
+            <h3>Cadastre os livros</h3>
+
+            <form action="/cadastrar" method="POST">
+                <label>Nome: </label>
+                <input type="text" name="nome"> <br><br>
+
+                <label>Autor: </label>
+                <input type="text" name="autor"> <br><br>
+
+                <label>Descrição: </label> <br>
+                <textarea name="descricao" id="" cols="50" rows="4"> </textarea> <br><br>
+
+                <button>Cadastrar</button>
+            </form>
+
+    </body>
+</html>
