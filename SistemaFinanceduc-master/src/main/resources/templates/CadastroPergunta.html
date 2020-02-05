@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PAGINA ADM CADASTRAR PERGUNTAS</title>
+        <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    </head>
+    <body>
+            <div id="header" class="container">
+                <div id="logo">
+
+                    <a href="/"><img th:src="@{images/logo.png}" alt="Logo Financeduc Home"></a>
+                </div>
+            </div>
+        <form action="/cadastrarPergunta" method="post" class="formulario">
+        <h2>Cadastrar Pergunta para o Quiz - ADM</h2>
+        <div class="campo">
+            <label>Pergunta: </label>
+            <input type="text" name="texto">
+        </div>
+
+        <div class="campo">
+            <label>Resposta: </label>
+            <input type="text" name="resposta">
+        </div>
+        <div class="campo">
+            <label>Alternativa Correta: </label>
+            <select name="letra">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+            </select>
+        </div>
+
+        <button>Cadastrar</button>
+    </form>
+    </body>
+</html>
